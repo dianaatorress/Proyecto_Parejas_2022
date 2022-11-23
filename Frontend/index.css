@@ -1,0 +1,38 @@
+aside{
+    width: 750px;
+    height: 600px;
+    background-color: rgb(72, 161, 213);
+}
+
+body{
+    background-color: rgb(220, 220, 220);
+}
+
+.welcomeImg{
+    width: 750px;
+    height: 600px;
+    opacity: 50%;
+}
+
+.datos{
+    color: black;
+    border-radius: 7px;
+    /* border-color: rgb(28, 4, 4); */
+    margin-top: 25px;
+    height: 25px;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.datossub{
+    margin-top: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.minicontenedor{
+    text-align: center;
+    margin-top: 125px;
+}
