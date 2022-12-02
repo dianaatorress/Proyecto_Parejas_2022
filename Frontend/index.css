@@ -30,9 +30,64 @@ body{
     margin-top: 30px;
     height: 30px;
     cursor: pointer;
+    margin-bottom: 25px;
+    background-color: rgb(104, 171, 222);
+    border-color: rgb(4, 4, 51);
+    color: rgb(4, 4, 51);
+    border-radius: 15px;
+}
+
+.datossub:hover{
+    background-color: rgb(4, 4, 51);
+    border-color: rgb(104, 171, 222);
+    color:rgb(104, 171, 222) ;
 }
 
 .minicontenedor{
     text-align: center;
     margin-top: 125px;
 }
+
+.css4{
+    background-image: url("https://geonautrices.com/wp-content/uploads/2016/12/westminster-Londres.jpg");
+    background-size: cover;
+}
+
+.cuentaNueva{
+    text-align: center;
+    margin-top: 60px;
+    background-color: rgba(168, 184, 200, 0.564);
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.datosRequeridos{
+    color: rgb(2, 6, 27);
+    text-align: center;
+    margin-right: 10px;
+}
+
+.creando{
+    color: black;
+    border-radius: 7px;
+    height: 25px;
+}
+
+.miniDiv{
+    display: flex;
+    align-items: center;
+}
+
+.miniDivPapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsway{
+    margin-left: 30px;
+}
+
+/* .bienvenue{
+    text-shadow: 3px 5px 6px black;
+} */
