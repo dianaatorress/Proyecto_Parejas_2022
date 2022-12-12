@@ -118,6 +118,44 @@ body{
     color:rgb(185, 218, 237);
 }
 
+.yourProfile{
+    margin-left: 570px;
+    border-radius: 100%;
+    background-color: rgb(185, 218, 237);
+    border-color: rgb(4, 4, 51);
+    color: rgb(4, 4, 51);
+    height: 80px;
+    cursor: pointer;
+}
+
+.yourProfile:hover{
+    /* background-color: rgb(4, 4, 51); */
+    background-image: url("https://www.pngitem.com/pimgs/m/41-415019_profile-man-male-free-picture-male-avatar-clipart.png");
+    background-size: cover;
+    border-color: rgb(185, 218, 237);
+    color:rgb(185, 218, 237);
+}
+
+.ejercicios{
+    margin-top: 25px;
+    margin-left: 33px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    background-color: rgb(4, 4, 51);
+    border-color: rgb(185, 218, 237);
+    color:rgb(185, 218, 237);
+    border-radius: 25px;
+}
+
+.ejercicios:hover{
+    width: 210px;
+    height: 210px;
+    background-color: rgb(185, 218, 237);
+    border-color: rgb(4, 4, 51);
+    color: rgb(4, 4, 51);
+}
+
 /* .bienvenue{
     text-shadow: 3px 5px 6px black;
 } */
