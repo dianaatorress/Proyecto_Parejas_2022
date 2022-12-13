@@ -6,6 +6,7 @@ aside{
 
 body{
     background-color: rgb(220, 220, 220);
+    font-family: 'Graphik' , sans-serif;
 }
 
 .welcomeImg{
@@ -30,9 +31,144 @@ body{
     margin-top: 30px;
     height: 30px;
     cursor: pointer;
+    margin-bottom: 25px;
+    background-color: rgb(104, 171, 222);
+    border-color: rgb(4, 4, 51);
+    color: rgb(4, 4, 51);
+    border-radius: 15px;
+}
+
+.datossub:hover{
+    background-color: rgb(4, 4, 51);
+    border-color: rgb(104, 171, 222);
+    color:rgb(104, 171, 222) ;
+    transition: 0.3s;
 }
 
 .minicontenedor{
     text-align: center;
     margin-top: 125px;
 }
+
+.css4{
+    background-image: url("https://geonautrices.com/wp-content/uploads/2016/12/westminster-Londres.jpg");
+    background-size: cover;
+}
+
+.cuentaNueva{
+    text-align: center;
+    margin-top: 60px;
+    background-color: rgba(168, 184, 200, 0.564);
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.datosRequeridos{
+    color: rgb(2, 6, 27);
+    text-align: center;
+    margin-right: 10px;
+}
+
+.creando{
+    color: black;
+    border-radius: 7px;
+    height: 25px;
+}
+
+.miniDiv{
+    display: flex;
+    align-items: center;
+}
+
+.miniDivPapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsway{
+    margin-left: 30px;
+}
+
+.pagPrinc{
+    background-color: rgb(185, 218, 237);
+}
+
+.navclass{
+    background-color: rgb(51, 155, 240);
+    height: 100px;
+}
+
+.options{
+    padding-left: 25px;
+}
+
+.optionsClass{
+    margin-top: 30px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    background-color: rgb(185, 218, 237);
+    border-color: rgb(4, 4, 51);
+    color: rgb(4, 4, 51);
+    border-radius: 50px;
+}
+
+.optionsClass:hover{
+    background-color: rgb(4, 4, 51);
+    border-color: rgb(185, 218, 237);
+    color:rgb(185, 218, 237);
+    transition: 0.3s;
+}
+
+.yourProfile{
+    margin-left: 570px;
+    border-radius: 100%;
+    background-color: rgb(185, 218, 237);
+    border-color: rgb(4, 4, 51);
+    color: rgb(4, 4, 51);
+    height: 80px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.yourProfile:hover{
+    /* background-color: rgb(4, 4, 51); */
+    background-image: url("https://www.pngitem.com/pimgs/m/41-415019_profile-man-male-free-picture-male-avatar-clipart.png");
+    background-size: cover;
+    border-color: rgb(185, 218, 237);
+    color:rgba(185, 218, 237, 0);
+    transition: 0.3s;
+}
+
+.ejercicios{
+    margin-top: 25px;
+    margin-left: 33px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    background-color: rgb(4, 4, 51);
+    border-color: rgb(185, 218, 237);
+    box-shadow: none;
+    color:rgb(185, 218, 237);
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.ejercicios:hover{
+    width: 210px;
+    height: 210px;
+    background-color: rgb(185, 218, 237);
+    border-color: rgb(4, 4, 51);
+    color: rgb(4, 4, 51);
+    transition: 0.3s;
+}
+
+button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* .bienvenue{
+    text-shadow: 3px 5px 6px black;
+} */

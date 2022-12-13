@@ -11,19 +11,19 @@ window.onload = function () {
   escogerPreguntaAleatoria();
 };
 
-function mostrarPreguntas(preguntas) {
-  //Para cada pregunta nos trae la pregunta, la img y las respuestas
-   movies.forEach((pregunta) => {
-      const { categoria, pregunta, respuesta, incorrecta1, incorrecta2, incorrecta3, imagen, objectFit, numero } = pregunta;
+// function mostrarPreguntas(preguntas) {
+//   //Para cada pregunta nos trae la pregunta, la img y las respuestas
+//    preguntas.forEach((pregunta) => {
+//       const preguntaa = { categoria, pregunta, respuesta, incorrecta1, incorrecta2, incorrecta3, imagen, objectFit, numero };
 
-      const preguntaAparece = document.addEventListener('encabezado');
-      preguntaAparece.classList.add("pregunta");
+//       const preguntaAparece = document.addEventListener('encabezado');
+//       preguntaAparece.classList.add("pregunta");
 
-      preguntaAparece.innerHTML = `
-        <src="><src/>
-      main.appendChild(movieEl);
-  });
-}
+//       preguntaAparece.innerHTML = ´
+//         <src="><src/>
+//       main.appendChild(movieEl);
+//   });
+// }
 
 let pregunta;
 let posibles_respuestas;
