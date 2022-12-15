@@ -1,0 +1,24 @@
+{
+  "name": "proyecto_parejas_2022",
+  "version": "1.0.0",
+  "description": "\"# Proyecto_Parejas_2022\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dianaatorress/Proyecto_Parejas_2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dianaatorress/Proyecto_Parejas_2022/issues"
+  },
+  "homepage": "https://github.com/dianaatorress/Proyecto_Parejas_2022#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}
