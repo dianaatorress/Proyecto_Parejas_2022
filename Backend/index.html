@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="./database.js"></script>
 </head>
 <body>
     <!-- Se crea el Login de la pagina -->
@@ -14,13 +15,13 @@
             <img class="welcomeImg" src="https://onhisowntrip.com/wp-content/uploads/2020/06/uk.jpg" alt="England">
         </aside>
         <div class="minicontenedor">
-            <h1 class="dsway">WELCOME TO D´S WAY</h1>
+            <h1 class="dsway">WELCOME TO D'S WAY</h1>
             <!-- La parte donde se inicia la sesion -->
-            <form action="/" method="POST">
+            <!-- <form action="/login" method="POST"> -->
                 <input class="datos" type="text" name="" id="username" placeholder="Ingresa el usuario"><br>
                 <input class="datos" type="text" name="" id="password" placeholder="Ingresa la contraseña"><br>
                 <button class="datossub" onclick="validar()">Submit</button><br>
-            </form>
+            <!-- </form> -->
             <!-- Crea una cuenta si no la tiene -->
             <a class="crearCuenta" href="./pagRegistro.html">Crea una cuenta</a>
         </div>

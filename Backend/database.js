@@ -19,19 +19,19 @@ app.use("/Backend", express.static("Backend"));
 // })
 
 //datos de connection con la bd local
-// var con = mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "1234",
-// });
-
-//como ya creamos la db, ahora tmb tenemos que poner ese dato en los valores predeterminados
-con = mysql.createConnection({
+var con = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "1234",
-  database: "daisy",
 });
+
+//como ya creamos la db, ahora tmb tenemos que poner ese dato en los valores predeterminados
+// con = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "1234",
+//   database: "daisy",
+// });
 
 //comprobar que la connection con la bd
 con.connect(function (err) {
@@ -45,32 +45,32 @@ app.get("/login", function (req, res) {
 
 
 //crear db llamada 'daisy'
-// con.query("CREATE DATABASE IF NOT EXISTS daisy", function (err, result) {
+// con.query("CREATE DATABASE daisy", function (err, result) {
 //   if (err) throw err;
 //   console.log("Database created");
 // });
 
 // //como ya creamos la db, ahora tmb tenemos que poner ese dato en los valores predeterminados
-// con = mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "1234",
-//   database: "daisy",
-// });
+con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "1234",
+  database: "daisy",
+});
 
 //creamos entidad llamada 'userLogin'
-// var sql = "CREATE TABLE userLogin (name VARCHAR(255), password VARCHAR(255))";
-// con.query(sql, function (err, result) {
-//   if (err) throw err;
-//   console.log("Table created");
-// });
-
-//insertamos dentro de la entidad 2 atributos: name & password
-var sql = "INSERT INTO userLogin (name, password) VALUES ('damaris', '1234')";
+var sql = "CREATE TABLE userLogin (name VARCHAR(255), password VARCHAR(255))";
 con.query(sql, function (err, result) {
   if (err) throw err;
-  console.log("1 Record Insterted");
+  console.log("Table created");
 });
+
+//insertamos dentro de la entidad 2 atributos: name & password
+// var sql = "INSERT INTO userLogin (name, password) VALUES ('damaris', '1234')";
+// con.query(sql, function (err, result) {
+//   if (err) throw err;
+//   console.log("1 Record Insterted");
+// });
 
 // //vemos la tabla en la db
 // var sql = "SELECT * FROM userLogin";
@@ -91,16 +91,19 @@ con.query(sql, function (err, result) {
 //   res.end();
 // })
 
-app.post("/", encoder, function (req, res) {
-  var name = req.body.username;
+app.post("/login", encoder, function (req, res) {
+  var name = req.body.name;
   var password = req.body.password;
 
+  // alert('Holaa :)')
+  // res.redirect("/login/welcomeUser");
+
   con.query(
-    "SELECT * FROM userLogin WHERE name = damaris and password = 1234",
+    "SELECT * FROM userLogin WHERE name = ? and password = ?",
     [name, password], function (err, result, fields) {
       //si los datos son correctos, ingresas a la pag de actividades
       if (result.lenght > 0) {
-        res.redirect("/welcomeUser");
+        // res.redirect("/login/welcomeUser");
         console.log("si me conecte bro");
 
         //sino, te redirecciona a la pag de login
@@ -123,7 +126,7 @@ con.query(sql, function (err, result, fields) {
 });
 
 //Esto es para que cuando ingrese correctamente, le abra la pag de actividades
-app.get("/welcomeUser", function (req, res) {
+app.get("/login/welcomeUser", function (req, res) {
   res.sendFile(__dirname + "/pagActividades.html");
 });
 
@@ -131,3 +134,10 @@ app.get("/welcomeUser", function (req, res) {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+
+// function validar(){
+//   if (){
+
+//   }
+// }
