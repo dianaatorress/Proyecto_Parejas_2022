@@ -1,5 +1,5 @@
-aside{
-    width: 750px;
+nav{
+    width: 1195px;
     height: 600px;
     background-color: rgb(72, 161, 213);
 }
@@ -19,7 +19,9 @@ body{
     border-radius: 7px;
     /* border-color: rgb(28, 4, 4); */
     margin-top: 25px;
-    height: 25px;
+    width: 200px;
+    height: 35px;
+    /* border: 1px; */
 }
 
 .contenedor{
@@ -28,7 +30,8 @@ body{
 
 .datossub{
     margin-top: 30px;
-    height: 30px;
+    width: 90px;
+    height: 35px;
     cursor: pointer;
     margin-bottom: 25px;
     background-color: rgb(104, 171, 222);
@@ -46,6 +49,7 @@ body{
 .minicontenedor{
     text-align: center;
     margin-top: 125px;
+    margin-left: 125px;
 }
 
 .css4{
@@ -116,6 +120,7 @@ body{
     background-color: rgb(4, 4, 51);
     border-color: rgb(185, 218, 237);
     color:rgb(185, 218, 237);
+    transition: 0.3s;
 }
 
 .yourProfile{
@@ -129,11 +134,12 @@ body{
 }
 
 .yourProfile:hover{
-    /* background-color: rgb(4, 4, 51); */
-    background-image: url("https://www.pngitem.com/pimgs/m/41-415019_profile-man-male-free-picture-male-avatar-clipart.png");
-    background-size: cover;
-    border-color: rgb(185, 218, 237);
-    color:rgb(185, 218, 237);
+   /* background-color: rgb(4, 4, 51); */
+   background-image: url("https://www.pngitem.com/pimgs/m/41-415019_profile-man-male-free-picture-male-avatar-clipart.png");
+   background-size: cover;
+   border-color: rgb(185, 218, 237);
+   color:rgba(185, 218, 237, 0);
+   transition: 0.3s;
 }
 
 .ejercicios{
@@ -154,8 +160,52 @@ body{
     background-color: rgb(185, 218, 237);
     border-color: rgb(4, 4, 51);
     color: rgb(4, 4, 51);
+    transition: 0.3s;
 }
 
-/* .bienvenue{
-    text-shadow: 3px 5px 6px black;
-} */
+.buttons{
+    display: flex;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(168, 184, 200, 0.608); /*Fallback color*/
+    backdrop-filter: blur(16px);
+  }
+  /* Modal Content/Box */
+  .modal-content {
+    /* background-color: #5F4C0B; */
+    background-color: rgb(132, 197, 199);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid rgb(4, 4, 51);
+    width: 60%; /* Could be more or less, depending on screen size */
+    font-size: 20px;
+    color: rgb(4, 4, 51);
+  }
+
+  close {
+    /* color: #aaa; */
+    color: rgb(12, 12, 114);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(4, 4, 51);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.flex{
+    display: flex;
+}
